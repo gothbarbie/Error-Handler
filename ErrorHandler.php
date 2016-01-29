@@ -2,6 +2,9 @@
 /**
  *  Handlers Errors
  */
+
+namespace Gothbarbie\ErrorHandler;
+
 class ErrorHandler
 {
     protected $errors = [];
@@ -28,7 +31,6 @@ class ErrorHandler
         return count($this->all()) ? true : false;
     }
 
-    // @return string
     public function first($key)
     {
         return isset($this->all()[$key][0]) ? $this->all()[$key][0] : '';
